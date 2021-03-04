@@ -17,6 +17,7 @@ class CreateGeneratedTokensTable extends Migration
             $table->id();
             $table->string('user_id')->nullable();
             $table->string('user_mail')->nullable();
+            $table->string('raw_token')->nullable();
             $table->string('token_id')->nullable();
             $table->string('saved_token')->nullable();
             $table->timestamps();
