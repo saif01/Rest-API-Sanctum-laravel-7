@@ -35,6 +35,8 @@ class ComposerStaticInita3a79569360a7424d01ae20020e91454
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '40275907c8566c390185147049ef6e5d' => __DIR__ . '/..' . '/livewire/livewire/src/helpers.php',
+        '8d3b2199cd129cab173c6d6470bfbcb5' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/helper.php',
+        '822c2b793cdc182c668716e0913f9513' => __DIR__ . '/../..' . '/app/Helpers/Oracle.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -45,6 +47,10 @@ class ComposerStaticInita3a79569360a7424d01ae20020e91454
         'p' => 
         array (
             'phpDocumentor\\Reflection\\' => 25,
+        ),
+        'Y' => 
+        array (
+            'Yajra\\' => 6,
         ),
         'X' => 
         array (
@@ -185,6 +191,11 @@ class ComposerStaticInita3a79569360a7424d01ae20020e91454
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
+        ),
+        'Yajra\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src',
+            1 => __DIR__ . '/..' . '/yajra/laravel-oci8/src',
         ),
         'XdgBaseDir\\' => 
         array (
@@ -494,7 +505,12 @@ class ComposerStaticInita3a79569360a7424d01ae20020e91454
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\GeneratedTokens' => __DIR__ . '/../..' . '/app/GeneratedTokens.php',
+        'App\\Http\\Controllers\\AdCheck' => __DIR__ . '/../..' . '/app/Http/Controllers/AdCheck.php',
+        'App\\Http\\Controllers\\AdConfig' => __DIR__ . '/../..' . '/app/Http/Controllers/AdConfig.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\OracleConfig' => __DIR__ . '/../..' . '/app/Http/Controllers/OracleConfig.php',
+        'App\\Http\\Controllers\\OracleData' => __DIR__ . '/../..' . '/app/Http/Controllers/OracleData.php',
+        'App\\Http\\Controllers\\TokenManagement' => __DIR__ . '/../..' . '/app/Http/Controllers/TokenManagement.php',
         'App\\Http\\Controllers\\UserController' => __DIR__ . '/../..' . '/app/Http/Controllers/UserController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
@@ -4456,6 +4472,7 @@ class ComposerStaticInita3a79569360a7424d01ae20020e91454
         'Symfony\\Component\\Finder\\Iterator\\FileTypeFilterIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/FileTypeFilterIterator.php',
         'Symfony\\Component\\Finder\\Iterator\\FilecontentFilterIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/FilecontentFilterIterator.php',
         'Symfony\\Component\\Finder\\Iterator\\FilenameFilterIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/FilenameFilterIterator.php',
+        'Symfony\\Component\\Finder\\Iterator\\LazyIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/LazyIterator.php',
         'Symfony\\Component\\Finder\\Iterator\\MultiplePcreFilterIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/MultiplePcreFilterIterator.php',
         'Symfony\\Component\\Finder\\Iterator\\PathFilterIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/PathFilterIterator.php',
         'Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator' => __DIR__ . '/..' . '/symfony/finder/Iterator/RecursiveDirectoryIterator.php',
@@ -5051,6 +5068,25 @@ class ComposerStaticInita3a79569360a7424d01ae20020e91454
         'Whoops\\Util\\SystemFacade' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/SystemFacade.php',
         'Whoops\\Util\\TemplateHelper' => __DIR__ . '/..' . '/filp/whoops/src/Whoops/Util/TemplateHelper.php',
         'XdgBaseDir\\Xdg' => __DIR__ . '/..' . '/dnoegel/php-xdg-base-dir/src/Xdg.php',
+        'Yajra\\Oci8\\Auth\\OracleUserProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Auth/OracleUserProvider.php',
+        'Yajra\\Oci8\\Connectors\\OracleConnector' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Connectors/OracleConnector.php',
+        'Yajra\\Oci8\\Eloquent\\OracleEloquent' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Eloquent/OracleEloquent.php',
+        'Yajra\\Oci8\\Oci8Connection' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8Connection.php',
+        'Yajra\\Oci8\\Oci8ServiceProvider' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Oci8ServiceProvider.php',
+        'Yajra\\Oci8\\OracleReservedWords' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/OracleReservedWords.php',
+        'Yajra\\Oci8\\Query\\Grammars\\OracleGrammar' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/Grammars/OracleGrammar.php',
+        'Yajra\\Oci8\\Query\\OracleBuilder' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/OracleBuilder.php',
+        'Yajra\\Oci8\\Query\\Processors\\OracleProcessor' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Query/Processors/OracleProcessor.php',
+        'Yajra\\Oci8\\Schema\\Comment' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Comment.php',
+        'Yajra\\Oci8\\Schema\\Grammars\\OracleGrammar' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Grammars/OracleGrammar.php',
+        'Yajra\\Oci8\\Schema\\OracleAutoIncrementHelper' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleAutoIncrementHelper.php',
+        'Yajra\\Oci8\\Schema\\OracleBlueprint' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleBlueprint.php',
+        'Yajra\\Oci8\\Schema\\OracleBuilder' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/OracleBuilder.php',
+        'Yajra\\Oci8\\Schema\\Sequence' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Sequence.php',
+        'Yajra\\Oci8\\Schema\\Trigger' => __DIR__ . '/..' . '/yajra/laravel-oci8/src/Oci8/Schema/Trigger.php',
+        'Yajra\\Pdo\\Oci8' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8.php',
+        'Yajra\\Pdo\\Oci8\\Exceptions\\Oci8Exception' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8/Exceptions/Oci8Exception.php',
+        'Yajra\\Pdo\\Oci8\\Statement' => __DIR__ . '/..' . '/yajra/laravel-pdo-via-oci8/src/Pdo/Oci8/Statement.php',
         'phpDocumentor\\Reflection\\DocBlock' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlock.php',
         'phpDocumentor\\Reflection\\DocBlockFactory' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactory.php',
         'phpDocumentor\\Reflection\\DocBlockFactoryInterface' => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src/DocBlockFactoryInterface.php',

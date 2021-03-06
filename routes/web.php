@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,4 +20,10 @@ Route::get('/', function () {
 
 Route::get('/ad', 'AdCheck@index');
 
-Route::get('/sms', 'AdCheck@smsData');
+Route::get('/sms', 'OracleData@smsData');
+
+// Route::get('/dump-auto', function()
+// {
+//     \Artisan::call('dump-autoload');
+//      echo 'dump-autoload complete';
+// });
